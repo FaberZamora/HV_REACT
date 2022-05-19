@@ -119,7 +119,7 @@ function App() {
 </div>
 <div class="mb-3">
   <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea><br/>
   <button type="button" class="btn btn-success">Enviar</button>
 </div>
 </div>
