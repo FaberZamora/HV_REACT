@@ -21,12 +21,13 @@ function App() {
     //   </header>
     // </div>
     <>
-   <div>
+   <div class="encabezado-principal">
    <br/>
-            <h2>Hoja de vida John Faber Zamora Trujillo</h2><br/>
+            <h2>Hoja de vida</h2><br/>
+            <h2>John Faber Zamora Trujillo</h2><br/>
             <img src={Foto} width='150px'/>
     </div> <br/>
-
+<div class="cuerpo">
    <div class="accordion" id="accordionPanelsStayOpenExample">
     <div class="accordion-item">
     <h2 class="accordion-header" id="panelsStayOpen-headingOne">
@@ -107,6 +108,20 @@ function App() {
         </div>
     </div>
   </div>
+</div><br/><br/>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Asunto</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="XXXXX"/>
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  <button type="button" class="btn btn-success">Enviar</button>
+</div>
 </div>
     </>
   );
