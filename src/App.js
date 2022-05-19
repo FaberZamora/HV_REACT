@@ -118,7 +118,7 @@ function App() {
   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="XXXXX"/>
 </div>
 <div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+  <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
   <button type="button" class="btn btn-success">Enviar</button>
 </div>
