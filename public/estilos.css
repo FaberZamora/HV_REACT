@@ -1,9 +1,11 @@
 .encabezado-principal{
-	margin-right: 30px;
-	margin-left: 30px;
-	margin-top: 3%;
+	margin-right: 30%;
+	margin-left: 30%;
+	margin-top: 4%;
 	text-align: center;
 	font-family: Comic Sans;
+	background-color: rgb(180, 216, 233);
+	border-style: double;
 	
 }
 
@@ -24,3 +26,10 @@
 	margin-right: 30px;
 	margin-left: 30px;
 	}
+
+	.formulario{
+		margin-right: 5%;
+		margin-left: 5%;
+		background-color: rgb(180, 216, 233);
+		border-style: double;
+		}

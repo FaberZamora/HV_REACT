@@ -25,7 +25,7 @@ function App() {
    <br/>
             <h2>Hoja de vida</h2><br/>
             <h2>John Faber Zamora Trujillo</h2><br/>
-            <img src={Foto} width='150px'/>
+            <img src={Foto} width='150px'/><br/><br/>
     </div> <br/>
 <div class="cuerpo">
    <div class="accordion" id="accordionPanelsStayOpenExample">
@@ -44,7 +44,7 @@ function App() {
     </div>
   </div>
   <div class="accordion-item">
-    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
         INFORMACIÓN PERSONAL
       </button>
@@ -61,7 +61,7 @@ function App() {
     </div>
   </div>
   <div class="accordion-item">
-    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
         FORMACION ACADEMICA
       </button>
@@ -93,7 +93,7 @@ function App() {
     </div>
   </div>
   <div class="accordion-item">
-    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+    <h2 class="accordion-header" id="panelsStayOpen-headingFour">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
         EXPERIENCIA LABORAL
       </button>
@@ -108,7 +108,9 @@ function App() {
         </div>
     </div>
   </div>
+  </div>
 </div><br/><br/>
+<div class="formulario">
 <div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label">Email address</label>
   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
