@@ -26,11 +26,26 @@ function App() {
             <h2>Hoja de vida John Faber Zamora Trujillo</h2><br/>
             <img src={Foto} width='150px'/>
     </div> <br/>
-    <div class="accordion" id="accordionPanelsStayOpenExample">
+
+   <div class="accordion" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+      PERFIL PROFESIONAL
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+      <div class="accordion-body">
+      Tecnólogo en Telecomunicaciones y en Ing. de sistemas. Con experiencia laboral en el área de las telecomunicaciones, de excelentes relaciones interpersonales y habilidad para trabajar en equipo o individual. Enfocado en la productividad y liderazgo. Con alto grado de responsabilidad y fácil interpretación de las políticas organizacionales.
+      Persona con excelente actitud y vocación de servicio, dinámica, paciente, puntual y organizada, destacado por la habilidad de trabajo en equipo, capacidad de aprendizaje de forma rápida y adaptabilidad. Comprometido, autónomo y orientado a la obtención de resultados.
+      Experiencia en servicio al cliente, generando soluciones a peticiones, quejas o reclamos, cobro de cartera y análisis de información de facturación. Facilidad de expresión y excelente fluidez verbal, conocimiento en el manejo diversas aplicaciones Office. 
+      </div>
+    </div>
+  </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="panelsStayOpen-headingOne">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-        INFORMACION PERSONAL
+        INFORMACIÓN PERSONAL
       </button>
     </h2>
     <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
@@ -57,7 +72,7 @@ function App() {
                     Basica Primaria<br/>
                     2000<br/>
                     Manizales<br/><br/>
-        <strong>secundarios</strong> <br/>
+        <strong>Secundarios</strong> <br/>
                     Liceo Mixto Aranjuez<br/>
                     Bachiller Industrial Electricidad y Electrónica<br/>
                     2007<br/>
