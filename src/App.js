@@ -1,5 +1,8 @@
 import logo from './logo.svg';
 import Foto from './Foto.jpg';
+import Diploma1 from './Diploma1.jpg';
+import Diploma2 from './Diploma2.jpg';
+import Diploma3 from './Diploma3.jpg';
 import './App.css';
 
 function App() {
@@ -108,22 +111,38 @@ function App() {
         </div>
     </div>
   </div>
-  </div>
+  </div> 
 </div><br/><br/>
+<div class="container">
+  <h2><center>Certificaciones</center></h2>
+  <div class="row">
+    <div class="col-4">
+    <img src={Diploma1}width='100%'/>
+    </div>
+    <div class="col-4">
+    <img src={Diploma2}width='100%'/>
+    </div>
+    <div class="col-4">
+    <img src={Diploma3}width='100%'/>
+    </div>
+  </div>
+</div>
+<br/>
 <div class="formulario">
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Email address</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
-</div>
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Asunto</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="XXXXX"/>
-</div>
-<div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea><br/>
-  <button type="button" class="btn btn-success">Enviar</button>
-</div>
+  <div class="encabezado-principal"> <h3>Formulario de contacto</h3></div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Asunto</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="XXXXX"/>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea><br/>
+      <center><button type="button" class="btn btn-success">Enviar</button></center>
+    </div>
 </div>
     </>
   );
