@@ -1,43 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
+    <!--Etiqueta usada para decirle al navegador que se usarán el tipo de codificación utf-8 o para caracteres especiales-->
+    <meta charset='utf-8'>
+    <!--Etiqueta usada para optimización para móviles diciendo que el-->
+    <!--width(ancho) es igual al tamaño de la pantalla actual-->
+    <!--user-scalable=no significa que el usuario no puede hacer zoom sobre la página evitando que el usuario genere una distorsión en la visualización-->
+    <meta name='viewport' content='width=device-width, user-scalable=no'>
+    <!--Etiqueta usada para colocar el nombre en la pestaña del navegador web-->
+    <title>Hoja de Vida</title>
+    <!--Etiqueta usada para colocar el autor de la página web-->
+    <meta name='author' content='Faber Zamora'>
+    <!--Etiqueta usada para colocar las palabras con las cuales se indexara la página y se podrá encontrar por google-->
+    <meta name='keywords' content='html, css, fundamentos'>
+    <!--Etiqueta usada para dar una descripción de la página web-->
+    <meta name='description' content='Hoja de Vida de John Faber Zamora'>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <meta charset="utf-8">
+    <title></title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>  
+</head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <div id="root">
+      <!--Render code React-js-->
+    </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <!-- Cargar React. -->
+    <!-- Nota: cuando se despliegue, reemplazar "development.js" con "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <!-- Cargamos nuestro componente de React. -->
+    <script type="text/babel">
+// nota cada codigo que veas documentado de aca para abajo
+// seran diferentes formas de realizarlo con jsx los coloco para
+// que podamos probar y mirar diferentes formas de como podriamos realizarlos
+// los 12 ejercicios
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+// 0. guardado de datos simple
+const data = {
+  title_1: "Plato de la semana",
+  title_2: "Berenjenas fritas",
+  paragraph_1: "Comensale 4 personas",
+  paragraph_2: "Comensale 5 personas",
+}
+
+// 1.
+const title_x = <h1>{data.title_1}</h1>;
+const subtitle_x = <h2>{data.title_2}</h2>;
+const paragraph_x = <p>{data.paragraph_1}</p>;
+const paragraph_2x = <p>{data.paragraph_2}</p>;
+
+const element = (
+  <div>
+    {title_x}
+    {subtitle_x}
+    {paragraph_x}
+    <br/><br/>
+    {paragraph_2x}
+    <br/><br/>
+    {paragraph_2x}
+  </div>
+);
+
+// Renderiamos o pintamos
+ReactDOM.render(
+  element,// estructura jsx para pintar
+  document.getElementById('root')// elemento donde se pintara
+);
+    </script>
   </body>
 </html>
